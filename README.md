@@ -1,7 +1,7 @@
 # cse341-gameslibrary-heyrend
 
-# Known Spripts
+# Known Scripts
 
-#npm start
+# npm start
 
-#npm run swagger
+# npm run swagger
