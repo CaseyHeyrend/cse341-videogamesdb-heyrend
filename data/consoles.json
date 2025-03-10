@@ -1,0 +1,22 @@
+[
+{
+  "console": "Switch",
+  "company": "Nintendo",
+  "intro": "03/03/2017"  
+},
+{
+  "console": "GameCube",
+  "company": "Nintendo",
+  "intro": "09/14/2001"  
+},
+{
+  "console": "Xbox Series X",
+  "company": "Microsoft",
+  "intro": "11/10/2020"  
+},
+{
+  "console": "PlayStation 5",
+  "company": "Sony",
+  "intro": "11/12/2020"
+}
+ ]
