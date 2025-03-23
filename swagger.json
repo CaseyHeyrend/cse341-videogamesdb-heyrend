@@ -15,12 +15,12 @@
   },
   "servers": [
     {
-      "url": "http://localhost:8080",
-      "description": "Local development server"
-    },
-    {
       "url": "cse341-videogamesdb-heyrend.onrender.com",
       "description": "Production server"
+    },
+    {
+      "url": "http://localhost:8080",
+      "description": "Local development server"
     }
   ],
   "tags": [
@@ -42,6 +42,74 @@
     }
   ],
   "paths": {
+    "/games/{id}": {
+      "put": {
+        "tags": [
+          "Games"
+        ],
+        "summary": "Add or Update a Game",
+        "description": "Endpoint to add or update a game in the database.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "gameTitle": {
+                    "example": "any"
+                  },
+                  "consoles": {
+                    "example": "any"
+                  },
+                  "developer": {
+                    "example": "any"
+                  },
+                  "publisher": {
+                    "example": "any"
+                  },
+                  "genre": {
+                    "example": "any"
+                  },
+                  "shortSummary": {
+                    "example": "any"
+                  },
+                  "rating": {
+                    "example": "any"
+                  },
+                  "releaseDate": {
+                    "example": "any"
+                  },
+                  "recommended": {
+                    "example": "any"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/consoles/": {
       "get": {
         "tags": [
@@ -310,7 +378,7 @@
         }
       }
     },
-    "/games/{id}": {
+    "/{id}": {
       "put": {
         "tags": [
           "Games"
