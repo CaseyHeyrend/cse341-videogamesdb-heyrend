@@ -1,0 +1,15 @@
+### Create contact
+PUT http://localhost:8080/games/67d60668a7cb018cfb8e846d HTTP/1.1
+Content-Type: application/json
+
+{
+    "gameTitle": "Xenoblade",
+    "consoles": ["Switch","steam"],
+    "developer": "Monolith",
+    "publisher": "Nintendo",
+    "genre": ["Action", "Adventure", "Strategy"],
+    "shortSummary": "crazy game",
+    "rating": "4.9 Stars",
+    "releaseDate": "2017-03-03",
+    "recommended": "yes"
+}
