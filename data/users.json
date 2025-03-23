@@ -1,0 +1,20 @@
+[
+    {
+      "username": "casey-h_cse341",
+      "password": "test341",
+      "email": "cozygame@test.com",
+      "name": "Casey"
+    },
+    {
+      "username": "alejandrov-m_cse341",
+      "password": "test456",
+      "email": "Switchgames@test.com",
+      "name": "Alejandro"
+    },
+    {
+      "username": "daniel-e_cse341",
+      "password": "test123",
+      "email": "games@test.com",
+      "name": "Daniel"
+    }
+  ]

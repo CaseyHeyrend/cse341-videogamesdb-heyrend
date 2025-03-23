@@ -1,0 +1,122 @@
+[
+    {
+        "console": "Switch",
+        "company": "Nintendo",
+        "intro": "03/03/2017"  
+      },
+      {
+        "console": "GameCube",
+        "company": "Nintendo",
+        "intro": "09/14/2001"  
+      },
+      {
+        "console": "Xbox Series X/S",
+        "company": "Microsoft",
+        "intro": "11/10/2020"  
+      },
+      {
+        "console": "PlayStation 5",
+        "company": "Sony",
+        "intro": "11/12/2020"
+      },
+      {
+        "console": "PlayStation 4",
+        "company": "Sony",
+        "intro": "11/15/2013"
+      },
+      {
+        "console": "Xbox One",
+        "company": "Microsoft",
+        "intro": "11/22/2013"
+      },
+      {
+        "console": "Wii U",
+        "company": "Nintendo",
+        "intro": "11/18/2012"
+      },
+      {
+        "console": "Wii",
+        "company": "Nintendo",
+        "intro": "11/19/2006"
+      },
+      {
+        "console": "Xbox 360",
+        "company": "Microsoft",
+        "intro": "11/22/2005"
+      },
+      {
+        "console": "PlayStation 3",
+        "company": "Sony",
+        "intro": "11/17/2006"
+      },
+      {
+        "console": "Xbox",
+        "company": "Microsoft",
+        "intro": "11/15/2001"
+      },
+      {
+        "console": "PlayStation 2",
+        "company": "Sony",
+        "intro": "10/26/2000"
+      },
+      {
+        "console": "Dreamcast",
+        "company": "Sega",
+        "intro": "09/09/1999"
+      },
+      {
+        "console": "Nintendo 64",
+        "company": "Nintendo",
+        "intro": "09/29/1996"
+      },
+      {
+        "console": "PlayStation",
+        "company": "Sony",
+        "intro": "09/09/1995"
+      },
+      {
+        "console": "Saturn",
+        "company": "Sega",
+        "intro": "05/11/1995"
+      },
+      {
+        "console": "3DO",
+        "company": "Panasonic",
+        "intro": "10/04/1993"
+      },
+      {
+        "console": "CD-i",
+        "company": "Philips",
+        "intro": "12/03/1991"
+      },
+      {
+        "console": "Super Nintendo",
+        "company": "Nintendo",
+        "intro": "08/23/1991"
+      },
+      {
+        "console": "Genesis",
+        "company": "Sega",
+        "intro": "08/14/1989"
+      },
+      {
+        "console": "TurboGrafx-16",
+        "company": "NEC",
+        "intro": "08/29/1989"
+      },
+      {
+        "console": "NES",
+        "company": "Nintendo",
+        "intro": "10/18/1985"
+      },
+      {
+        "console": "Steam Deck",
+        "company": "Valve",
+        "intro": "12/2021"
+      },
+      {
+        "console": "Steam App",
+        "company": "Valve",
+        "intro": "09/12/2003"
+      }
+]
