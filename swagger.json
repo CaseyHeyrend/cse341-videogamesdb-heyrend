@@ -19,7 +19,7 @@
       "description": "Local development server"
     },
     {
-      "url": "https://webservices-videogamesdb-age0.onrender.com",
+      "url": "cse341-videogamesdb-heyrend.onrender.com",
       "description": "Production server"
     }
   ],
