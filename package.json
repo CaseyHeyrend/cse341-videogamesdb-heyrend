@@ -1,0 +1,39 @@
+{
+  "name": "cse341-videogamesdb-heyrend",
+  "version": "1.0.0",
+  "description": "# Known Scripts",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CaseyHeyrend/cse341-videogamesdb-heyrend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CaseyHeyrend/cse341-videogamesdb-heyrend/issues"
+  },
+  "homepage": "https://github.com/CaseyHeyrend/cse341-videogamesdb-heyrend#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^3.0.2",
+    "body-parser": "^1.20.3",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "globals": "^16.0.0",
+    "mongodb": "^6.15.0",
+    "mongoose": "^8.12.2",
+    "swagger-ui-express": "^5.0.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.9",
+    "supertest": "^7.1.0",
+    "swagger-autogen": "^2.23.7"
+  }
+}
