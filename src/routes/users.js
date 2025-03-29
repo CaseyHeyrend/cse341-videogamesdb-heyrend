@@ -1,9 +1,10 @@
 const express = require("express");
 const router = express.Router();
 const usersController = require("../controllers/userscontroller");
+const { requiresAuth } = require("express-openid-connect");
 
 // Get all users
-router.get("/", usersController.getAllUsers);
+router.get("/", requiresAuth(), usersController.getAllUsers);
 
 // Get a user by username
 //router.get("/:username", usersController.getUser);

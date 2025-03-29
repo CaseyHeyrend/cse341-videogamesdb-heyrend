@@ -2,8 +2,20 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const MongoClient = require("mongoose").MongoClient;
 const cors = require("cors");
+require("dotenv").config();
 //const bcrypt = require("bcrypt");
 
+//Auth0
+const { auth, requiresAuth } = require('express-openid-connect');
+ 
+const config = {
+  authRequired: false,
+  auth0Logout: true,
+  secret: process.env.SECRET,
+  baseURL: process.env.BASE_URL,
+  clientID: process.env.CLIENT_ID,
+  issuerBaseURL: process.env.ISSUER_BASE_URL,
+};
 
 // From env flie
 const port = process.env.PORT || 8080;
@@ -23,6 +35,9 @@ app.use(bodyParser.json());
 
 // Middleware
 
+// auth router attaches /login, /logout, and /callback routes to the baseURL
+app.use(auth(config));
+
 // CORS
 app.use((req, res, next) => {
   const allowedOrigin =
@@ -37,14 +52,28 @@ app.use((req, res, next) => {
     next();
   });
 
+  app.get("/loggedIn", (req, res) => {
+    res.send(req.oidc.isAuthenticated() ? "Logged in ✅" : "Logged out ❌");
+  });
+
+  app.get("/logout", (req, res) => {
+    // Logs out the user and redirects to the home page or any page you want
+    res.oidc.logout({ returnTo: process.env.BASE_URL || "http://localhost:3000" });
+  });  
+
 // Swagger
-app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
+//app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
+app.use("/api-docs", requiresAuth(), swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 // Routes
 app.use("/", require("./src/routes"));
-app.use("/games", require("./src/routes/games"));
-app.use("/consoles", require("./src/routes/consoles"));
-app.use("/users", require("./src/routes/users"));
+app.use("/games", requiresAuth(), require("./src/routes/games"));
+app.use("/consoles", requiresAuth(), require("./src/routes/consoles"));
+app.use("/users", requiresAuth(), require("./src/routes/users"));
+app.use("/copies", requiresAuth(), require("./src/routes/copies"));
+//app.use("/games", require("./src/routes/games"));
+//app.use("/consoles", require("./src/routes/consoles"));
+//app.use("/users", require("./src/routes/users"));
 
 app.use(express.static("public"));
 
