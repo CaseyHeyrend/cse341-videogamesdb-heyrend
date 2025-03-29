@@ -1,4 +1,32 @@
-### Create contact
+// LOCAL HOST: localhost:8080
+### Home
+GET http://localhost:8080/
+
+### All games
+GET http://localhost:8080/games
+
+### All Consoles
+GET http://localhost:8080/consoles
+
+### All Users
+GET http://localhost:8080/users
+
+### Post Games
+POST http://localhost:8080/games
+Content-Type: application/json
+
+{
+    "gameTitle": "Fae Farm",
+    "consoles": ["Switch","Steam"],
+    "developer": "Phoenix Labs",
+    "publisher": "Phoenix Labs",
+    "genre": ["Action", "RPG", "Simulation"],
+    "shortSummary": "Escape to the magical life of your dreams in Fae Farm, a cozy farming adventure set in the enchanting world of Azoria.",
+    "rating": "4.5 Stars",
+    "releaseDate": "2023-09-08",
+    "recommended": "yes"
+}
+### PUT Games
 PUT http://localhost:8080/games/67d60668a7cb018cfb8e846d HTTP/1.1
 Content-Type: application/json
 
@@ -13,3 +41,55 @@ Content-Type: application/json
     "releaseDate": "2017-03-03",
     "recommended": "yes"
 }
+### DELETE Games
+DELETE http://localhost:8080/games/67d60668a7cb018cfb8e846d HTTP/1.1
+
+### Swagger
+GET http://localhost:8080/api-docs/
+// PRODUCTION Deploy or render.com 
+### Home 
+GET https://webservices-videogamesdb-age0.onrender.com
+
+### All games 
+GET https://webservices-videogamesdb-age0.onrender.com/games
+
+### All Consoles
+GET https://webservices-videogamesdb-age0.onrender.com/consoles
+### All Users
+GET https://webservices-videogamesdb-age0.onrender.com/users
+
+### POST Games
+POST https://webservices-videogamesdb-age0.onrender.com/games
+Content-Type: application/json
+
+{
+    "gameTitle": "Fae Farm",
+    "consoles": ["Switch","Steam"],
+    "developer": "Phoenix Labs",
+    "publisher": "Phoenix Labs",
+    "genre": ["Action", "RPG", "Simulation"],
+    "shortSummary": "Escape to the magical life of your dreams in Fae Farm, a cozy farming adventure set in the enchanting world of Azoria.",
+    "rating": "4.5 Stars",
+    "releaseDate": "2023-09-08",
+    "recommended": "yes"
+}
+### PUT Games
+PUT https://webservices-videogamesdb-age0.onrender.com/games/67d60668a7cb018cfb8e846d HTTP/1.1
+Content-Type: application/json
+
+{
+    "gameTitle": "Xenoblade",
+    "consoles": ["Switch","Steam"],
+    "developer": "Monolith",
+    "publisher": "Nintendo",
+    "genre": ["Action", "Adventure", "Strategy"],
+    "shortSummary": "crazy game",
+    "rating": "4.9 Stars",
+    "releaseDate": "2017-03-03",
+    "recommended": "yes"
+}
+
+### DELETE Games
+DELETE https://webservices-videogamesdb-age0.onrender.com/games/67d60668a7cb018cfb8e846d HTTP/1.1
+### Swagger
+GET https://webservices-videogamesdb-age0.onrender.com/api-docs/
