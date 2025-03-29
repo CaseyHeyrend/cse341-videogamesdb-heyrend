@@ -1,35 +1,40 @@
 # Check list of Nodes we should have
 Please Update when adding a new package
 
-npm init --y
+- npm init --y
 
-npm install --save express
+- npm install --save express
 
-npm install nodemon --save-dev
+- npm install nodemon --save-dev
 
-npm install --save body-parser
+- npm install --save body-parser
 
-npm install mongodb
+- npm install mongodb
 
-npm i --save dotenv
+- npm i --save dotenv
 
-npm install cors
+- npm install cors
 
-npm install mongoose
+- npm install mongoose
 
-npm install swagger-ui-express
+- npm install swagger-ui-express
 
-npm install --save-dev swagger-autogen
+- npm install --save-dev swagger-autogen
 
-npm install globals
+- npm install globals
 
-npm install bcrypt
+- npm install bcrypt
 
-npm install bcryptjs
+- npm install bcryptjs
 
-npm install --save-dev jest
+- npm install --save-dev jest
 
-npm install cookie-parser
+- npm install cookie-parser
 
-npm install supertest --save-dev
+- npm install supertest --save-dev
 
+- npm install --save express-oauth2-jwt-bearer
+
+- npm install express-openid-connect
+
+- npm install express express-openid-connect --save
