@@ -3,15 +3,15 @@ const router = express.Router();
 const copiesController = require("../controllers/copiesController");
 
 // GET request for list of all copies
-router.get("/copies", copiesController.getCopies);
+router.get("/", copiesController.getAllCopies);
 
 // GET request for one copy
-router.get("/copies/:id", copiesController.getCopy);
+router.get("/:id", copiesController.getCopyByGameTitle);
 
 // PUT request to add or update a copy
-router.put("/copies", copiesController.addOrUpdateCopy);
+router.put("/", copiesController.addOrUpdateCopy);
 
 // DELETE request to delete a copy
-router.delete("/copies/:id", copiesController.deleteCopy);
+router.delete("/:id", copiesController.deleteCopy);
 
 module.exports = router;

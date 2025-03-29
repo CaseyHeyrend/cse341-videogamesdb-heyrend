@@ -15,7 +15,7 @@
   },
   "servers": [
     {
-      "url": "cse341-videogamesdb-heyrend.onrender.com",
+      "url": "https://webservices-videogamesdb-age0.onrender.com",
       "description": "Production server"
     },
     {
@@ -42,7 +42,52 @@
     }
   ],
   "paths": {
+    "/games/": {
+      "get": {
+        "tags": [
+          "Games"
+        ],
+        "summary": "Get all games",
+        "description": "Returns all games in the database",
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
     "/games/{id}": {
+      "get": {
+        "tags": [
+          "Games"
+        ],
+        "summary": "Get a game by ID",
+        "description": "Returns a game by its ID",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
       "put": {
         "tags": [
           "Games"
@@ -106,6 +151,34 @@
                 }
               }
             }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Games"
+        ],
+        "summary": "Delete a game by ID",
+        "description": "Deletes a game by its ID",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
           }
         }
       }
@@ -378,23 +451,28 @@
         }
       }
     },
-    "/{id}": {
+    "/copies/": {
+      "get": {
+        "tags": [
+          "Copies"
+        ],
+        "summary": "Get all copies",
+        "description": "Returns all copies in the database",
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
       "put": {
         "tags": [
-          "Games"
+          "Copies"
         ],
-        "summary": "Add or Update a Game",
-        "description": "Endpoint to add or update a game in the database.",
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
+        "summary": "Add or update a copy",
+        "description": "Add or update a copy",
         "responses": {
           "200": {
             "description": "OK"
@@ -412,36 +490,79 @@
               "schema": {
                 "type": "object",
                 "properties": {
+                  "downloaded": {
+                    "example": "any"
+                  },
+                  "physical": {
+                    "example": "any"
+                  },
                   "gameTitle": {
                     "example": "any"
                   },
                   "consoles": {
                     "example": "any"
-                  },
-                  "developer": {
-                    "example": "any"
-                  },
-                  "publisher": {
-                    "example": "any"
-                  },
-                  "genre": {
-                    "example": "any"
-                  },
-                  "shortSummary": {
-                    "example": "any"
-                  },
-                  "rating": {
-                    "example": "any"
-                  },
-                  "releaseDate": {
-                    "example": "any"
-                  },
-                  "recommended": {
-                    "example": "any"
                   }
                 }
               }
             }
+          }
+        }
+      }
+    },
+    "/copies/{id}": {
+      "get": {
+        "tags": [
+          "Copies"
+        ],
+        "summary": "Get a copy by game title",
+        "description": "Returns a copy by game title",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Copies"
+        ],
+        "summary": "Delete a copy",
+        "description": "Delete a copy",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
           }
         }
       }

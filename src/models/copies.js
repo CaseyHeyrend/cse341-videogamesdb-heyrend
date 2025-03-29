@@ -1,10 +1,10 @@
-const  mongoose  = require("mongoose");
+const mongoose = require("mongoose");
 
 const copiesSchema = new mongoose.Schema({
     downloaded: { type: Boolean, required: true },
     physical: { type: Boolean, required: true },
     gameTitle: { type: String, required: true },
-    consoles: [{ type: String, required: true }] // Array of consoles
+    consoles: [{ type: String}] // Array of consoles
 
 });
 
@@ -19,7 +19,7 @@ copiesSchema.pre("save", function (next) {
 }
 );  
 
-copiesSchema = mongoose.model("Copies", copiesSchema);
-module.exports = Copies;
+const Copy = mongoose.model("Copies", copiesSchema);
+module.exports = Copy;
 
 

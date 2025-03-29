@@ -1,7 +1,6 @@
-# cse341-gameslibrary-heyrend
+# Welcome to Our Video Games Library API
 
-# Known Scripts
-
-# npm start
-
-# npm run swagger
+# Available Scripts
+ - npm run dev
+ - npm run start
+ - npm run swagger

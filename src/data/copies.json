@@ -2,8 +2,55 @@
     {
       "downloaded": "yes",
       "physical": "no",
-      "gameTitle": "",
-      "console(s)": ""
-      
+      "gameTitle": "Dreamlight Valley",
+      "consoles": ["Switch", "Steam", "Xbox Series X/S", "Playstation 5", "Playstation 4"]
+    },
+    {
+      "downloaded": "yes",
+      "physical": "yes",
+      "gameTitle": "The Legend of Zelda: Breath of the Wild",
+      "consoles": ["Switch"]
+    },
+    {
+      "downloaded": "yes",
+      "physical": "yes",
+      "gameTitle": "Pikmin 4",
+      "consoles": ["Switch"]
+    },
+    {
+      "downloaded": "yes",
+      "physical": "yes",
+      "gameTitle": "Call of Duty: Black Ops 6",
+      "consoles": ["Steam", "Xbox Series X/S", "Playstation 5", "Playstation 4"]
+    },
+    {
+      "downloaded": "yes",
+      "physical": "no",
+      "gameTitle": "Ale & Tale Tavern",
+      "consoles": ["Steam"]
+    },
+    {
+      "downloaded": "yes",
+      "physical": "no",
+      "gameTitle": "Xenoblade",
+      "consoles": ["Switch", "Steam"]
+    },
+    {
+      "downloaded": "yes",
+      "physical": "yes",
+      "gameTitle": "Hello Kitty Island Adventure",
+      "consoles": ["Switch", "Steam", "Apple app store"]
+    },
+    {
+      "downloaded": "yes",
+      "physical": "no",
+      "gameTitle": "Planet Crafter",
+      "consoles": ["Steam"]
+    },
+    {
+      "downloaded": "yes",
+      "physical": "no",
+      "gameTitle": "Coral Island",
+      "consoles": ["Steam"]
     }
   ]
