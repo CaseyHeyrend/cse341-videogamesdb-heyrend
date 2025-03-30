@@ -43,8 +43,27 @@ const doc = {
     "name": "Copies",
     "description": "Operations about Copies"
   }
-], 
-  };
+],
+components: {
+  securitySchemes: {
+    openIdConnect: {
+      type: "oauth2",
+      flows: {
+        authorizationCode: {
+          authorizationUrl: "https://dev-goq8gdaydc0qfbbz.us.auth0.com/authorize",
+          tokenUrl: "https://dev-goq8gdaydc0qfbbz.us.auth0.com/oauth/token",
+          scopes: {
+            read: "Grants read access",
+            write: "Grants write access",
+            admin: "Grants access to admin operations",
+          },
+        },
+      },
+    },
+  },
+},
+};
+
   
   // Output file
   const outputFile = "./swagger.json";
