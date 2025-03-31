@@ -8,7 +8,10 @@ consolesController.getAllConsoles = async (req, res) => {
     #swagger.summary = "Get all Consoles"
     #swagger.description = "Endpoint to get all consoles from the database."
     #swagger.tags = ['Consoles']
-    
+    #swagger.security = [{
+        "OAuth2": ["read"]
+        }]
+
     */
     try {
         const consoles = await Console.find();
@@ -44,6 +47,9 @@ consolesController.addOrUpdateConsole = async (req, res) => {
     #swagger.summary = "Add or Update a Console"
     #swagger.description = "Endpoint to add or update a console in the database."
     #swagger.tags = ['Consoles']
+    #swagger.security = [{
+        "OAuth2": ["write"]
+        }]
     */
     try {
         const { console, company, intro } = req.body;
@@ -73,6 +79,9 @@ consolesController.deleteConsole = async (req, res) => {
     #swagger.summary = "Delete a Console"
     #swagger.description = "Endpoint to delete a console from the database."
     #swagger.tags = ['Consoles']
+    #swagger.security = [{
+        "OAuth2": ["admin"]
+        }]
     */
     try {
         const { console } = req.params;

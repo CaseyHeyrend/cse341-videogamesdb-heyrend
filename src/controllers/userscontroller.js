@@ -12,7 +12,7 @@ usersController.getAllUsers = async (req, res) => {
     #swagger.tags = ['Users']
     #swagger.security = [{
         "OAuth2": ["read"]
-  }]
+        }]
     */
     try {
         const users = await User.find();
@@ -53,8 +53,8 @@ usersController.addOrUpdateUser = async (req, res) => {
     #swagger.description = "Add or update a user (with password hashing)"
     #swagger.tags = ['Users']
     #swagger.security = [{
-    "OAuth2": ["write"]
-    }]
+        "OAuth2": ["write"]
+        }]
     */
     try {
         const { username, password, email, name } = req.body;
@@ -85,6 +85,9 @@ usersController.deleteUser = async (req, res) => {
     #swagger.summary = "Delete a user by username"
     #swagger.description = "Delete a user by username"
     #swagger.tags = ['Users']
+    #swagger.security = [{
+        "OAuth2": ["admin"]
+        }]
     */
     try {
         const { username } = req.params;
@@ -107,9 +110,6 @@ usersController.searchUsers = async (req, res) => {
     #swagger.summary = "Search users by name or email"
     #swagger.description = "Search users by name or email."
     #swagger.tags = ['Users']
-        #swagger.security = [{
-        "OAuth2": ["admin"]
-    }]
     */
     try {
         const { query } = req.query;

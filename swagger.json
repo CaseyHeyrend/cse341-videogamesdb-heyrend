@@ -56,7 +56,14 @@
           "500": {
             "description": "Internal Server Error"
           }
-        }
+        },
+        "security": [
+          {
+            "OAuth2": [
+              "read"
+            ]
+          }
+        ]
       },
       "post": {
         "tags": [
@@ -75,6 +82,13 @@
             "description": "Internal Server Error"
           }
         },
+        "security": [
+          {
+            "OAuth2": [
+              "write"
+            ]
+          }
+        ],
         "requestBody": {
           "content": {
             "application/json": {
@@ -171,6 +185,13 @@
             "description": "Internal Server Error"
           }
         },
+        "security": [
+          {
+            "OAuth2": [
+              "write"
+            ]
+          }
+        ],
         "requestBody": {
           "content": {
             "application/json": {
@@ -236,7 +257,14 @@
           "500": {
             "description": "Internal Server Error"
           }
-        }
+        },
+        "security": [
+          {
+            "OAuth2": [
+              "admin"
+            ]
+          }
+        ]
       }
     },
     "/consoles/": {
@@ -253,7 +281,14 @@
           "500": {
             "description": "Internal Server Error"
           }
-        }
+        },
+        "security": [
+          {
+            "OAuth2": [
+              "read"
+            ]
+          }
+        ]
       },
       "post": {
         "tags": [
@@ -272,6 +307,13 @@
             "description": "Internal Server Error"
           }
         },
+        "security": [
+          {
+            "OAuth2": [
+              "write"
+            ]
+          }
+        ],
         "requestBody": {
           "content": {
             "application/json": {
@@ -350,6 +392,13 @@
             "description": "Internal Server Error"
           }
         },
+        "security": [
+          {
+            "OAuth2": [
+              "write"
+            ]
+          }
+        ],
         "requestBody": {
           "content": {
             "application/json": {
@@ -397,7 +446,14 @@
           "500": {
             "description": "Internal Server Error"
           }
-        }
+        },
+        "security": [
+          {
+            "OAuth2": [
+              "admin"
+            ]
+          }
+        ]
       }
     },
     "/users/": {
@@ -414,7 +470,14 @@
           "500": {
             "description": "Internal Server Error"
           }
-        }
+        },
+        "security": [
+          {
+            "OAuth2": [
+              "read"
+            ]
+          }
+        ]
       }
     },
     "/users/{username}": {
@@ -473,6 +536,13 @@
             "description": "Internal Server Error"
           }
         },
+        "security": [
+          {
+            "OAuth2": [
+              "write"
+            ]
+          }
+        ],
         "requestBody": {
           "content": {
             "application/json": {
@@ -523,7 +593,14 @@
           "500": {
             "description": "Internal Server Error"
           }
-        }
+        },
+        "security": [
+          {
+            "OAuth2": [
+              "admin"
+            ]
+          }
+        ]
       }
     },
     "/users/search": {
@@ -569,7 +646,14 @@
           "500": {
             "description": "Internal Server Error"
           }
-        }
+        },
+        "security": [
+          {
+            "OAuth2": [
+              "read"
+            ]
+          }
+        ]
       },
       "put": {
         "tags": [
@@ -588,6 +672,13 @@
             "description": "Internal Server Error"
           }
         },
+        "security": [
+          {
+            "OAuth2": [
+              "write"
+            ]
+          }
+        ],
         "requestBody": {
           "content": {
             "application/json": {
@@ -668,7 +759,14 @@
           "500": {
             "description": "Internal Server Error"
           }
-        }
+        },
+        "security": [
+          {
+            "OAuth2": [
+              "admin"
+            ]
+          }
+        ]
       }
     }
   },

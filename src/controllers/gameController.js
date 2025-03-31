@@ -7,6 +7,9 @@ gameController.getAllGames = async (req, res) => {
     #swagger.summary = "Get all games"
     #swagger.description = "Returns all games in the database"
     #swagger.tags = ['Games']
+    #swagger.security = [{
+        "OAuth2": ["read"]
+        }]
     */
     try {
         const games = await Game.find();
@@ -41,6 +44,9 @@ gameController.addOrUpdateGame = async (req, res) => {
     #swagger.summary = "Add or Update a Game"
     #swagger.description = "Endpoint to add or update a game in the database."
     #swagger.tags = ['Games']
+    #swagger.security = [{
+        "OAuth2": ["write"]
+        }]
     */
     try {
         const { gameTitle, consoles, developer, publisher, genre, shortSummary, rating, releaseDate, recommended } = req.body;
@@ -88,6 +94,9 @@ gameController.deleteGame = async (req, res) => {
     #swagger.summary = "Delete a game by ID"
     #swagger.description = "Deletes a game by its ID"
     #swagger.tags = ['Games']
+    #swagger.security = [{
+        "OAuth2": ["admin"]
+        }]
     */
     try {
         const gameId = req.params.id;
