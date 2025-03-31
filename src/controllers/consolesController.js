@@ -8,6 +8,7 @@ consolesController.getAllConsoles = async (req, res) => {
     #swagger.summary = "Get all Consoles"
     #swagger.description = "Endpoint to get all consoles from the database."
     #swagger.tags = ['Consoles']
+    
     */
     try {
         const consoles = await Console.find();
