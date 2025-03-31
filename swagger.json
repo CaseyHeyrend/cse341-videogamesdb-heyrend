@@ -42,7 +42,7 @@
     }
   ],
   "paths": {
-    "/games/": {
+    "/games": {
       "get": {
         "tags": [
           "Games"
