@@ -86,7 +86,7 @@ usersController.deleteUser = async (req, res) => {
     #swagger.description = "Delete a user by username"
     #swagger.tags = ['Users']
     #swagger.security = [{
-        "OAuth2": ["admin"]
+        "OAuth2": ["write"]
         }]
     */
     try {

@@ -95,7 +95,7 @@ gameController.deleteGame = async (req, res) => {
     #swagger.description = "Deletes a game by its ID"
     #swagger.tags = ['Games']
     #swagger.security = [{
-        "OAuth2": ["admin"]
+        "OAuth2": ["write"]
         }]
     */
     try {
