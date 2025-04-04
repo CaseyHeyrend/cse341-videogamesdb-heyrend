@@ -80,7 +80,7 @@ copiesController.deleteCopy = async (req, res) => {
     #swagger.description = "Delete a copy"
     #swagger.tags = ['Copies']
     #swagger.security = [{
-        "OAuth2": ["write"]
+        "OAuth2": ["admin"]
         }]
     */
     try {
