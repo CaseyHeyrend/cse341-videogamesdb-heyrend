@@ -780,7 +780,8 @@
             "tokenUrl": "https://dev-goq8gdaydc0qfbbz.us.auth0.com/oauth/token",
             "scopes": {
               "read": "Grants read access",
-              "write": "Grants write access"
+              "write": "Grants write access",
+              "admin": "Grants access to admin operations"
             }
           }
         }
