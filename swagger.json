@@ -115,7 +115,7 @@
         }
       }
     },
-    "/games/{id}": {
+    "/games/{gameTitle}": {
       "get": {
         "tags": [
           "Games"
@@ -124,7 +124,7 @@
         "description": "Returns a game by its ID",
         "parameters": [
           {
-            "name": "id",
+            "name": "gameTitle",
             "in": "path",
             "required": true,
             "schema": {
