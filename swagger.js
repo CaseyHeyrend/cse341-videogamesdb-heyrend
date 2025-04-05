@@ -45,8 +45,8 @@ const doc = {
   }
 ],
 components: {
-  securityDefinitions: {
-    Auth0: {
+  securitySchemes: {
+    openIdConnect: {
       type: "oauth2",
       flows: {
         implicit: {

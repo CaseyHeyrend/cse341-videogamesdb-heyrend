@@ -772,7 +772,7 @@
   },
   "components": {
     "securityDefinitions": {
-      "Auth0": {
+      "openIdConnect": {
         "type": "oauth2",
         "flows": {
           "implicit": {
