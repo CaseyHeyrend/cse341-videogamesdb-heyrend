@@ -261,7 +261,7 @@
         "security": [
           {
             "OAuth2": [
-              "write"
+              "admin"
             ]
           }
         ]
@@ -281,14 +281,7 @@
           "500": {
             "description": "Internal Server Error"
           }
-        },
-        "security": [
-          {
-            "OAuth2": [
-              "read"
-            ]
-          }
-        ]
+        }
       },
       "post": {
         "tags": [
@@ -307,13 +300,7 @@
             "description": "Internal Server Error"
           }
         },
-        "security": [
-          {
-            "OAuth2": [
-              "write"
-            ]
-          }
-        ],
+
         "requestBody": {
           "content": {
             "application/json": {
@@ -392,13 +379,7 @@
             "description": "Internal Server Error"
           }
         },
-        "security": [
-          {
-            "OAuth2": [
-              "write"
-            ]
-          }
-        ],
+       
         "requestBody": {
           "content": {
             "application/json": {
@@ -446,14 +427,7 @@
           "500": {
             "description": "Internal Server Error"
           }
-        },
-        "security": [
-          {
-            "OAuth2": [
-              "write"
-            ]
-          }
-        ]
+        }
       }
     },
     "/users/": {
@@ -597,7 +571,7 @@
         "security": [
           {
             "OAuth2": [
-              "write"
+              "admin"
             ]
           }
         ]
@@ -763,7 +737,7 @@
         "security": [
           {
             "OAuth2": [
-              "write"
+              "admin"
             ]
           }
         ]
