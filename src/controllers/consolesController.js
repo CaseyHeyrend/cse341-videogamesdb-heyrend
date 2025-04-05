@@ -8,8 +8,6 @@ consolesController.getAllConsoles = async (req, res) => {
     #swagger.summary = "Get all Consoles"
     #swagger.description = "Endpoint to get all consoles from the database."
     #swagger.tags = ['Consoles']
-
-
     */
     try {
         const consoles = await Console.find();
@@ -45,7 +43,6 @@ consolesController.addOrUpdateConsole = async (req, res) => {
     #swagger.summary = "Add or Update a Console"
     #swagger.description = "Endpoint to add or update a console in the database."
     #swagger.tags = ['Consoles']
- 
     */
     try {
         const { console, company, intro } = req.body;

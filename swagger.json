@@ -56,14 +56,7 @@
           "500": {
             "description": "Internal Server Error"
           }
-        },
-        "security": [
-          {
-            "OAuth2": [
-              "read"
-            ]
-          }
-        ]
+        }
       },
       "post": {
         "tags": [
@@ -82,13 +75,6 @@
             "description": "Internal Server Error"
           }
         },
-        "security": [
-          {
-            "OAuth2": [
-              "write"
-            ]
-          }
-        ],
         "requestBody": {
           "content": {
             "application/json": {
@@ -185,13 +171,6 @@
             "description": "Internal Server Error"
           }
         },
-        "security": [
-          {
-            "OAuth2": [
-              "write"
-            ]
-          }
-        ],
         "requestBody": {
           "content": {
             "application/json": {
@@ -257,14 +236,7 @@
           "500": {
             "description": "Internal Server Error"
           }
-        },
-        "security": [
-          {
-            "OAuth2": [
-              "admin"
-            ]
-          }
-        ]
+        }
       }
     },
     "/consoles/": {
@@ -300,7 +272,6 @@
             "description": "Internal Server Error"
           }
         },
-
         "requestBody": {
           "content": {
             "application/json": {
@@ -379,7 +350,6 @@
             "description": "Internal Server Error"
           }
         },
-       
         "requestBody": {
           "content": {
             "application/json": {
@@ -444,14 +414,7 @@
           "500": {
             "description": "Internal Server Error"
           }
-        },
-        "security": [
-          {
-            "OAuth2": [
-              "read"
-            ]
-          }
-        ]
+        }
       }
     },
     "/users/{username}": {
@@ -510,13 +473,6 @@
             "description": "Internal Server Error"
           }
         },
-        "security": [
-          {
-            "OAuth2": [
-              "write"
-            ]
-          }
-        ],
         "requestBody": {
           "content": {
             "application/json": {
@@ -567,14 +523,7 @@
           "500": {
             "description": "Internal Server Error"
           }
-        },
-        "security": [
-          {
-            "OAuth2": [
-              "admin"
-            ]
-          }
-        ]
+        }
       }
     },
     "/users/search": {
@@ -620,14 +569,7 @@
           "500": {
             "description": "Internal Server Error"
           }
-        },
-        "security": [
-          {
-            "OAuth2": [
-              "read"
-            ]
-          }
-        ]
+        }
       },
       "put": {
         "tags": [
@@ -646,13 +588,6 @@
             "description": "Internal Server Error"
           }
         },
-        "security": [
-          {
-            "OAuth2": [
-              "write"
-            ]
-          }
-        ],
         "requestBody": {
           "content": {
             "application/json": {
@@ -733,19 +668,85 @@
           "500": {
             "description": "Internal Server Error"
           }
-        },
-        "security": [
-          {
-            "OAuth2": [
-              "admin"
-            ]
+        }
+      }
+    },
+    "/": {
+      "get": {
+        "tags": [
+          "Games"
+        ],
+        "summary": "Get all games",
+        "description": "Returns all games in the database",
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
           }
-        ]
+        }
+      },
+      "post": {
+        "tags": [
+          "Games"
+        ],
+        "summary": "Add or Update a Game",
+        "description": "Endpoint to add or update a game in the database.",
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "gameTitle": {
+                    "example": "any"
+                  },
+                  "consoles": {
+                    "example": "any"
+                  },
+                  "developer": {
+                    "example": "any"
+                  },
+                  "publisher": {
+                    "example": "any"
+                  },
+                  "genre": {
+                    "example": "any"
+                  },
+                  "shortSummary": {
+                    "example": "any"
+                  },
+                  "rating": {
+                    "example": "any"
+                  },
+                  "releaseDate": {
+                    "example": "any"
+                  },
+                  "recommended": {
+                    "example": "any"
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     }
   },
   "components": {
-    "securityDefinitions": {
+    "securitySchemes": {
       "openIdConnect": {
         "type": "oauth2",
         "flows": {
