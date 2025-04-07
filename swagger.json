@@ -58,7 +58,7 @@
           }
         }
       },
-      "post": {
+      "put": {
         "tags": [
           "Games"
         ],
@@ -115,7 +115,7 @@
         }
       }
     },
-    "/games/{gameTitle}": {
+    "/games/{id}": {
       "get": {
         "tags": [
           "Games"
@@ -124,7 +124,7 @@
         "description": "Returns a game by its ID",
         "parameters": [
           {
-            "name": "gameTitle",
+            "name": "id",
             "in": "path",
             "required": true,
             "schema": {
@@ -143,9 +143,7 @@
             "description": "Internal Server Error"
           }
         }
-      }
-    },
-    "/games/{id}": {
+      },
       "put": {
         "tags": [
           "Games"
@@ -322,54 +320,6 @@
           },
           "500": {
             "description": "Internal Server Error"
-          }
-        }
-      },
-      "put": {
-        "tags": [
-          "Consoles"
-        ],
-        "summary": "Add or Update a Console",
-        "description": "Endpoint to add or update a console in the database.",
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          },
-          "400": {
-            "description": "Bad Request"
-          },
-          "500": {
-            "description": "Internal Server Error"
-          }
-        },
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "type": "object",
-                "properties": {
-                  "console": {
-                    "example": "any"
-                  },
-                  "company": {
-                    "example": "any"
-                  },
-                  "intro": {
-                    "example": "any"
-                  }
-                }
-              }
-            }
           }
         }
       },
@@ -673,7 +623,6 @@
         }
       }
     }
-
   },
   "components": {
     "securitySchemes": {

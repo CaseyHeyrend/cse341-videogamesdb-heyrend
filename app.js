@@ -2,7 +2,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const MongoClient = require("mongoose").MongoClient;
 const cors = require("cors");
-require("dotenv").config();
+require("dotenv").config(); 
 //const bcrypt = require("bcrypt");
 
 //Auth0
@@ -41,7 +41,7 @@ app.use(auth(config));
 // CORS
 app.use((req, res, next) => {
   const allowedOrigin =
-    process.env.NODE_ENV === "production" ? "cse341-videogamesdb-heyrend.onrender.com" : "http://localhost:8080";// Add your production domain here
+    process.env.NODE_ENV === "production" ? "https://webservices-videogamesdb-age0.onrender.com" : "http://localhost:8080";// Add your production domain here
     // https://webservices-videogamesdb.onrender.com - Casey
     // https://webservices-videogamesdb-age0.onrender.com - Team
     res.setHeader("Access-Control-Allow-Origin", allowedOrigin);
@@ -51,7 +51,7 @@ app.use((req, res, next) => {
     
     next();
   });
-
+// Auth0
   app.get("/loggedIn", (req, res) => {
     res.send(req.oidc.isAuthenticated() ? "Logged in ✅" : "Logged out ❌");
   });
@@ -74,6 +74,7 @@ app.use("/copies", requiresAuth(), require("./src/routes/copies"));
 //app.use("/games", require("./src/routes/games"));
 //app.use("/consoles", require("./src/routes/consoles"));
 //app.use("/users", require("./src/routes/users"));
+//app.use("/copies", require("./src/routes/copies"));
 
 app.use(express.static("public"));
 
@@ -102,4 +103,3 @@ connectDB().then(() => {
     process.exit(1);
   }
 );
-module.exports = app;

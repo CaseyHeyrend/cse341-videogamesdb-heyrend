@@ -8,10 +8,6 @@ router.get("/", consoles.getAllConsoles);
 router.get("/:id", consoles.getConsole);
 // Add or update a console
 router.post("/", consoles.addOrUpdateConsole);
-// Update a console by ID
-// Note: The POST method is used for both adding and updating a console.
-// This is a common pattern in REST APIs.
-router.put("/:id", consoles.addOrUpdateConsole);
 // Delete a console by ID
 router.delete("/:id", consoles.deleteConsole);
 

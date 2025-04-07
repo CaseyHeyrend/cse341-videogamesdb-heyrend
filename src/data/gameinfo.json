@@ -1,7 +1,13 @@
 [
   {
     "gameTitle": "Dreamlight Valley",
-    "consoles": ["Switch", "Steam", "Xbox Series X/S", "Playstation 5", "Playstation 4"],
+    "consoles": [
+      "Switch",
+      "Steam",
+      "Xbox Series X/S",
+      "Playstation 5",
+      "Playstation 4"
+    ],
     "developer": "Gameloft",
     "publisher": "Gameloft",
     "genre": ["Action", "Adventure", "Casual", "RPG", "Simulation"],
@@ -96,6 +102,17 @@
     "shortSummary": "Coral Island is a vibrant and laid-back reimagining of farm sim games. Be who you want and experience enchanting island living at your own pace—live off the land, nurture animals, build relationships with a diverse cast of townsfolk, and make the world around you a more vital and harmonious place.",
     "rating": "4.5 Stars",
     "releaseDate": "2023-11-14",
+    "recommended": "yes"
+  },
+  {
+    "gameTitle": "Mario Kart World",
+    "consoles": ["Switch 2"],
+    "developer": "Nintendo",
+    "publisher": "Nintendo",
+    "genre": ["Multiplayer", "Racing"],
+    "shortSummary": "All around chaos",
+    "rating": "4.5",
+    "releaseDate": "06/05/2025",
     "recommended": "yes"
   }
 ]

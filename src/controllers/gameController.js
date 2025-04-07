@@ -35,7 +35,47 @@ gameController.getGame = async (req, res) => {
         res.status(500).json({ error: "Internal Server Error" });
     }
 };
-// Controller to add or update a game
+// Add a new game
+gameController.addGame = async (req, res) => {
+    try {
+        const { gameTitle, consoles, developer, publisher, genre, shortSummary, rating, releaseDate, recommended } = req.body;
+
+        if (!gameTitle || !consoles || !developer || !publisher || !genre || !rating || !releaseDate) {
+            return res.status(400).json({ error: "All required fields must be provided." });
+        }
+
+        if (!Array.isArray(consoles) || !Array.isArray(genre)) {
+            return res.status(400).json({ error: "Consoles and genre must be arrays." });
+        }
+
+        const existingGame = await Game.findOne({ gameTitle });
+        if (existingGame) {
+            return res.status(400).json({ error: "Game already exists." });
+        }
+
+        const recommendedBoolean = typeof recommended === "string" ? recommended.toLowerCase() === "yes" : recommended;
+
+        const newGame = new Game({
+            gameTitle,
+            consoles,
+            developer,
+            publisher,
+            genre,
+            shortSummary,
+            rating,
+            releaseDate: new Date(releaseDate),
+            recommended: recommendedBoolean
+        });
+
+        await newGame.save();
+        res.status(201).json({ message: "Game added successfully!", game: newGame });
+    } catch (err) {
+        console.error(err);
+        res.status(500).json({ error: "Internal Server Error" });
+    }
+};
+
+// Controller to update a game
 gameController.addOrUpdateGame = async (req, res) => {
         /*
     #swagger.summary = "Add or Update a Game"

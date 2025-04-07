@@ -118,5 +118,10 @@
         "console": "Steam App",
         "company": "Valve",
         "intro": "09/12/2003"
+      },
+      {
+        "console": "Switch 2",
+        "company": "Nintendo",
+        "intro": "06/05/2025"
       }
 ]
