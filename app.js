@@ -41,7 +41,7 @@ app.use(auth(config));
 // CORS
 app.use((req, res, next) => {
   const allowedOrigin =
-    process.env.NODE_ENV === "production" ? "cse341-videogamesdb-heyrend.onrender.com" : "http://localhost:8080";// Add your production domain here
+    process.env.NODE_ENV === "production" ? "http://cse341-videogamesdb-heyrend.onrender.com" : "http://localhost:8080";// Add your production domain here
     // https://webservices-videogamesdb.onrender.com - Casey
     // https://webservices-videogamesdb-age0.onrender.com - Team
     res.setHeader("Access-Control-Allow-Origin", allowedOrigin);
