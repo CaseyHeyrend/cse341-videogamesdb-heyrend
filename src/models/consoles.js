@@ -4,7 +4,7 @@ const consoleSchema = new mongoose.Schema({
     console: { type: String, required: true },
     company: { type: String },
     intro: { type: Date },
-    __v: { type: Number, select: false } // Exclude __v from the response
+    __v: { type: Number, select: false } // Exclude __v from the response 
     
 });
 
