@@ -42,7 +42,7 @@ consolesController.getConsole = async (req, res) => {
 // Add or update a console
 consolesController.addOrUpdateConsole = async (req, res) => {
     /*
-    #swagger.summary = "Add or Update a Console"
+    #swagger.summary = "Add (POST) or Update (PUT) a Console"
     #swagger.description = " Add or update a console in the database."
     #swagger.tags = ['Consoles']
     */

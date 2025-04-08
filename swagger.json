@@ -264,7 +264,7 @@
           "Consoles"
         ],
         "summary": "Add or Update a Console",
-        "description": " Add or update a console in the database.",
+        "description": " Add (POST) or update (PUT) a console in the database.",
         "responses": {
           "200": {
             "description": "OK"
