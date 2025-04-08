@@ -21,9 +21,32 @@ describe('usersController.deleteUser', () => {
         User.findOneAndDelete.mockResolvedValue(mockDeleteUser);
 
         await usersController.deleteUser(req, res, next);
+
         expect(User.findOneAndDelete).toHaveBeenCalledWith({ username: 'testuser' });
         expect(res.status).toHaveBeenCalledWith(200);
         expect(res.json).toHaveBeenCalledWith({ message: "User deleted successfully" });
     });
 });
 
+test("should return 404 if user not found", async () => {
+    User.findOneAndDelete.mockResolvedValue(null);
+
+    await usersController.deleteUser(req, res, next);
+
+    expect(User.findOneAndDelete).toHaveBeenCalledWith({ username: 'testuser' });
+    expect(res.status).toHaveBeenCalledWith(404);
+    expect(res.json).toHaveBeenCalledWith({ error: "User not found" });
+});
+
+test("should return 500 if an error occurs", async () => {
+    const mockError = new Error('Database error');
+
+    User.findOneAndDelete.mockRejectedValue(error);
+
+    await usersController.deleteUser(req, res, next);
+
+    expect(User.findOneAndDelete).toHaveBeenCalledWith({ username: 'testuser' });
+    expect(res.status).toHaveBeenCalledWith(500);
+    expect(res.json).toHaveBeenCalledWith({ error: "Internal Server Error" });
+}
+);
