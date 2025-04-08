@@ -4,9 +4,9 @@ const { auth, requiresAuth } = require('express-openid-connect');
 
 // Require controller modules.
 
-router.use("/games", requiresAuth("./games"));
-router.use("/consoles", requiresAuth("./consoles"));
-router.use("/users", requiresAuth("./users"));
-router.use("/copies", requiresAuth("./copies"));
+router.use("/games", require("./games"));
+router.use("/consoles", require("./consoles"));
+router.use("/users", require("./users"));
+router.use("/copies", require("./copies"));
 
 module.exports = router;
