@@ -67,10 +67,10 @@ app.use("/api-docs", requiresAuth(), swaggerUi.serve, swaggerUi.setup(swaggerDoc
 
 // Routes
 app.use("/", require("./src/routes"));
-//app.use("/games", requiresAuth(), require("./src/routes/games"));
-//app.use("/consoles", requiresAuth(), require("./src/routes/consoles"));
-//app.use("/users", requiresAuth(), require("./src/routes/users"));
-//app.use("/copies", requiresAuth(), require("./src/routes/copies"));
+app.use("/games", requiresAuth(), require("./src/routes/games"));
+app.use("/consoles", requiresAuth(), require("./src/routes/consoles"));
+app.use("/users", requiresAuth(), require("./src/routes/users"));
+app.use("/copies", requiresAuth(), require("./src/routes/copies"));
 
 //Old routes
 //app.use("/games", require("./src/routes/games"));
