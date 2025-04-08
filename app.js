@@ -58,7 +58,7 @@ app.use((req, res, next) => {
 
   app.get("/logout", (req, res) => {
     // Logs out the user and redirects to the home page or any page you want
-    res.oidc.logout({ returnTo: process.env.BASE_URL || "http://localhost:3000" });
+    res.oidc.logout({ returnTo: process.env.BASE_URL || "http://localhost:8080" });
   });  
 
 // Swagger
@@ -67,10 +67,12 @@ app.use("/api-docs", requiresAuth(), swaggerUi.serve, swaggerUi.setup(swaggerDoc
 
 // Routes
 app.use("/", require("./src/routes"));
-app.use("/games", requiresAuth(), require("./src/routes/games"));
-app.use("/consoles", requiresAuth(), require("./src/routes/consoles"));
-app.use("/users", requiresAuth(), require("./src/routes/users"));
-app.use("/copies", requiresAuth(), require("./src/routes/copies"));
+//app.use("/games", requiresAuth(), require("./src/routes/games"));
+//app.use("/consoles", requiresAuth(), require("./src/routes/consoles"));
+//app.use("/users", requiresAuth(), require("./src/routes/users"));
+//app.use("/copies", requiresAuth(), require("./src/routes/copies"));
+
+//Old routes
 //app.use("/games", require("./src/routes/games"));
 //app.use("/consoles", require("./src/routes/consoles"));
 //app.use("/users", require("./src/routes/users"));

@@ -114,5 +114,16 @@
     "rating": "4.5",
     "releaseDate": "06/05/2025",
     "recommended": "yes"
+  },
+  {
+    "gameTitle": "Star Dew Valley",
+    "consoles": ["Switch", "Steam", "Xbox Series X/S", "Playstation 5", "Playstation 4"],
+    "developer": "ConcernedApe",
+    "publisher": "ConcernedApe",
+    "genre": ["Action", "Adventure", "Casual", "Indie", "RPG", "Simulation"],
+    "shortSummary": "You've inherited your grandfather's old farm plot in Stardew Valley. Armed with hand-me-down tools and a few coins, you set out to begin your new life. Can you learn to live off the land and turn these overgrown fields into a thriving home?",
+    "rating": "4.8 Stars",
+    "releaseDate": "02/26/2016",
+    "recommended": "yes"
   }
 ]
