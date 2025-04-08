@@ -9,7 +9,8 @@ const gamesInfoSchema = new mongoose.Schema({
     shortSummary: { type: String },
     rating: { type: String },
     releaseDate: { type: Date },  // Convert date format when inserting
-    recommended: { type: Boolean }
+    recommended: { type: Boolean },
+    __v: { type: Number, select: false } // Exclude __v from the response
 });
 
 // Pre-save hook to convert "recommended" field to boolean

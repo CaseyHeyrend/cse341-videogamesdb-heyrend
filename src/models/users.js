@@ -4,7 +4,8 @@ const userSchema = new mongoose.Schema({
     username: { type: String, required: true },
     password: { type: String, required: true },
     email: { type: String, required: true },
-    name: { type: String }
+    name: { type: String },
+    __v: { type: Number, select: false } // Exclude __v from the response
 });
 
 

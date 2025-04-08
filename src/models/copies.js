@@ -4,7 +4,8 @@ const copiesSchema = new mongoose.Schema({
     downloaded: { type: Boolean, required: true },
     physical: { type: Boolean, required: true },
     gameTitle: { type: String, required: true },
-    consoles: [{ type: String}] // Array of consoles
+    consoles: [{ type: String}], // Array of consoles
+    __v: { type: Number, select: false } // Exclude __v from the response
 
 });
 
