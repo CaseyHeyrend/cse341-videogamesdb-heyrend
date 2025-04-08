@@ -18,6 +18,7 @@ copiesSchema.pre("save", function (next) {
     next();
 }
 );  
+var Schema = new Schema({ __v: { type: Number, select: false}});
 
 const Copy = mongoose.model("Copies", copiesSchema);
 module.exports = Copy;
