@@ -16,7 +16,7 @@ const doc = {
     },
     servers: [
       {
-        url: "cse341-videogamesdb-heyrend.onrender.com",// Add your production domain here
+        url: "https://cse341-videogamesdb-heyrend.onrender.com",// Add your production domain here
         // https://webservices-videogamesdb.onrender.com - Casey
         // https://webservices-videogamesdb-age0.onrender.com - Team
         description: "Production server",

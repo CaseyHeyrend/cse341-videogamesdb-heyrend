@@ -15,7 +15,7 @@
   },
   "servers": [
     {
-      "url": "cse341-videogamesdb-heyrend.onrender.com",
+      "url": "https://cse341-videogamesdb-heyrend.onrender.com",
       "description": "Production server"
     },
     {
