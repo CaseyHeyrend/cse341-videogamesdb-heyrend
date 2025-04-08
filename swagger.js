@@ -24,6 +24,10 @@ const doc = {
       {
         url: "http://localhost:8080",
         description: "Local development server",
+      },
+      {
+        url: "https://webservices-videogamesdb-age0.onrender.com",// Main Team
+        description: "Production server",
       }
     ],
   "tags": [

@@ -7,12 +7,10 @@ copiesController.getAllCopies = async (req, res) => {
     #swagger.summary = "Get all copies"
     #swagger.description = "Returns all copies in the database"
     #swagger.tags = ['Copies']
-        #swagger.security = [{
-        "OAuth2": ["read"]
-  }]
+    #swagger.security = [ {"OAuth2": ["read"]}]
     */
     try {
-        const copies = await Copies.find();
+        const copies = await Copy.find();
         res.status(200).json(copies);
     } catch (err) {
         console.error(err);
@@ -25,10 +23,11 @@ copiesController.getCopyByGameTitle = async (req, res) => {
     #swagger.summary = "Get a copy by game title"
     #swagger.description = "Returns a copy by game title"
     #swagger.tags = ['Copies']
+    #swagger.security = [ {"OAuth2": ["read"]}]
     */
     try {
-        const { gameTitle } = req.params;
-        const copy = await Copies.findOne({ gameTitle });
+        const copyId = req.params.id;
+        const copy = await Copy.findById(copyId);
 
         if (!copy) {
             return res.status(404).json({ error: "Copy not found" });
@@ -46,9 +45,7 @@ copiesController.addOrUpdateCopy = async (req, res) => {
     #swagger.summary = "Add or update a copy"
     #swagger.description = "Add or update a copy"
     #swagger.tags = ['Copies']
-        #swagger.security = [{
-        "OAuth2": ["write"]
-    }]
+    #swagger.security = [ {"OAuth2": ["write"]}]
     */
     try {
         const { downloaded, physical, gameTitle, consoles } = req.body;
@@ -64,7 +61,7 @@ copiesController.addOrUpdateCopy = async (req, res) => {
             consoles
         };
 
-        const copy = await Copies.findOneAndUpdate({ gameTitle }, copyData, { new: true, upsert: true });
+        const copy = await Copy.findOneAndUpdate({ gameTitle }, copyData, { new: true, upsert: true });
 
         res.status(200).json(copy);
     } catch (err) {
@@ -78,13 +75,11 @@ copiesController.deleteCopy = async (req, res) => {
     #swagger.summary = "Delete a copy"
     #swagger.description = "Delete a copy"
     #swagger.tags = ['Copies']
-        #swagger.security = [{
-        "OAuth2": ["admin"]
-    }]
+    #swagger.security = [ {"OAuth2": ["admin"]}]
     */
     try {
-        const { gameTitle } = req.params;
-        const copy = await Copies.findOneAndDelete({ gameTitle });
+        const copyId = req.params.id;
+        const copy = await Copy.findOneAndDelete(copyId);
 
         if (!copy) {
             return res.status(404).json({ error: "Copy not found" });

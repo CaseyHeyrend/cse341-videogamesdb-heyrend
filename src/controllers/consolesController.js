@@ -6,11 +6,10 @@ const consolesController = {}
 consolesController.getAllConsoles = async (req, res) => {
     /*
     #swagger.summary = "Get all Consoles"
-    #swagger.description = "Endpoint to get all consoles from the database."
+    #swagger.description = "Get all consoles from the database."
     #swagger.tags = ['Consoles']
-    #swagger.security = [{
-        "OAuth2": ["read"]
-  }]
+    #swagger.security = [{ "OAuth2": ["read"] }]
+
     */
     try {
         const consoles = await Console.find();
@@ -25,12 +24,13 @@ consolesController.getAllConsoles = async (req, res) => {
 consolesController.getConsole = async (req, res) => {
     /*
     #swagger.summary = "Get a Console by Name"
-    #swagger.description = "Endpoint to get a console by name from the database."
+    #swagger.description = "get a console by name from the database."
     #swagger.tags = ['Consoles']
+    #swagger.security = [{ "OAuth2": ["read"] }]
     */
     try {
-        const { console } = req.params;
-        const consoleData = await Console.findOne({ console });
+        const consoleId = req.params.id;
+        const consoleData = await Console.findById(consoleId);
         if (!consoleData) {
             return res.status(404).json({ error: "Console not found" });
         }
@@ -44,11 +44,9 @@ consolesController.getConsole = async (req, res) => {
 consolesController.addOrUpdateConsole = async (req, res) => {
     /*
     #swagger.summary = "Add or Update a Console"
-    #swagger.description = "Endpoint to add or update a console in the database."
+    #swagger.description = " Add or update a console in the database."
     #swagger.tags = ['Consoles']
-        #swagger.security = [{
-        "OAuth2": ["write"]
-    }]
+    #swagger.security = [{"OAuth2": ["write"]}]
     */
     try {
         const { console, company, intro } = req.body;
@@ -76,15 +74,13 @@ consolesController.addOrUpdateConsole = async (req, res) => {
 consolesController.deleteConsole = async (req, res) => {
     /*
     #swagger.summary = "Delete a Console"
-    #swagger.description = "Endpoint to delete a console from the database."
+    #swagger.description = "Delete a console from the database."
     #swagger.tags = ['Consoles']
-        #swagger.security = [{
-        "OAuth2": ["admin"]
-    }]
+    #swagger.security = [ {"OAuth2": ["admin"]}]
     */
     try {
-        const { console } = req.params;
-        const consoleData = await Console.findOneAndDelete({ console });
+        const consoleId = req.params.id;
+        const consoleData = await Console.findOneAndDelete(consoleId);
         if (!consoleData) {
             return res.status(404).json({ error: "Console not found" });
         }
