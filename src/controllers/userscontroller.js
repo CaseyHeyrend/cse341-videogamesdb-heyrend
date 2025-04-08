@@ -10,7 +10,6 @@ usersController.getAllUsers = async (req, res) => {
     #swagger.summary = "Get all users"
     #swagger.description = "Returns all users in the database"
     #swagger.tags = ['Users']
-    #swagger.security = [{ "OAuth2": ["read"]}]
     */
     try {
         const users = await User.find();
@@ -28,7 +27,6 @@ usersController.getUser = async (req, res) => {
     #swagger.summary = " Get a user by username"
     #swagger.description = " Get a user by username"
     #swagger.tags = ['Users']
-    #swagger.security = [{"OAuth2": ["read"] }]
     */
     try {
         const { username } = req.params;
@@ -51,7 +49,6 @@ usersController.updateUser = async (req, res) => {
     #swagger.summary = "Update a user (with password hashing)"
     #swagger.description = "Update a user (with password hashing)"
     #swagger.tags = ['Users']
-    #swagger.security = [{"OAuth2": ["write"] }]
     */
     try {
         const { username, password, email, name } = req.body;
@@ -82,7 +79,6 @@ usersController.addUser = async (req, res) => {
 #swagger.summary = "Add (with password hashing)"
 #swagger.description = "Add or update a user (with password hashing)"
 #swagger.tags = ['Users']
-#swagger.security = [{"OAuth2": ["write"] }]
 */
 try {
     const { username, password, email, name } = req.body;
@@ -113,7 +109,6 @@ usersController.deleteUser = async (req, res) => {
     #swagger.summary = "Delete a user by username"
     #swagger.description = "Delete a user by username"
     #swagger.tags = ['Users']
-    #swagger.security = [ {"OAuth2": ["admin"]}]
     */
     try {
         const { username } = req.params;

@@ -7,7 +7,6 @@ copiesController.getAllCopies = async (req, res) => {
     #swagger.summary = "Get all copies"
     #swagger.description = "Returns all copies in the database"
     #swagger.tags = ['Copies']
-    #swagger.security = [ {"OAuth2": ["read"]}]
     */
     try {
         const copies = await Copy.find();
@@ -23,7 +22,6 @@ copiesController.getCopyByGameTitle = async (req, res) => {
     #swagger.summary = "Get a copy by game title"
     #swagger.description = "Returns a copy by game title"
     #swagger.tags = ['Copies']
-    #swagger.security = [ {"OAuth2": ["read"]}]
     */
     try {
         const copyId = req.params.id;
@@ -45,7 +43,6 @@ copiesController.addOrUpdateCopy = async (req, res) => {
     #swagger.summary = "Add or update a copy"
     #swagger.description = "Add or update a copy"
     #swagger.tags = ['Copies']
-    #swagger.security = [ {"OAuth2": ["write"]}]
     */
     try {
         const { downloaded, physical, gameTitle, consoles } = req.body;
@@ -75,7 +72,6 @@ copiesController.deleteCopy = async (req, res) => {
     #swagger.summary = "Delete a copy"
     #swagger.description = "Delete a copy"
     #swagger.tags = ['Copies']
-    #swagger.security = [ {"OAuth2": ["admin"]}]
     */
     try {
         const copyId = req.params.id;

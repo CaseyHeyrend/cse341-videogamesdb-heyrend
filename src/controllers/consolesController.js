@@ -8,7 +8,7 @@ consolesController.getAllConsoles = async (req, res) => {
     #swagger.summary = "Get all Consoles"
     #swagger.description = "Get all consoles from the database."
     #swagger.tags = ['Consoles']
-    #swagger.security = [{ "OAuth2": ["read"] }]
+
 
     */
     try {
@@ -26,7 +26,6 @@ consolesController.getConsole = async (req, res) => {
     #swagger.summary = "Get a Console by Name"
     #swagger.description = "get a console by name from the database."
     #swagger.tags = ['Consoles']
-    #swagger.security = [{ "OAuth2": ["read"] }]
     */
     try {
         const consoleId = req.params.id;
@@ -46,7 +45,6 @@ consolesController.addOrUpdateConsole = async (req, res) => {
     #swagger.summary = "Add or Update a Console"
     #swagger.description = " Add or update a console in the database."
     #swagger.tags = ['Consoles']
-    #swagger.security = [{"OAuth2": ["write"]}]
     */
     try {
         const { console, company, intro } = req.body;
@@ -76,7 +74,6 @@ consolesController.deleteConsole = async (req, res) => {
     #swagger.summary = "Delete a Console"
     #swagger.description = "Delete a console from the database."
     #swagger.tags = ['Consoles']
-    #swagger.security = [ {"OAuth2": ["admin"]}]
     */
     try {
         const consoleId = req.params.id;
