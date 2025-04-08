@@ -7,6 +7,6 @@ const userSchema = new mongoose.Schema({
     name: { type: String }
 });
 
-var Schema = new Schema({ __v: { type: Number, select: false}});
+
 const User = mongoose.model("User", userSchema);
 module.exports = User;

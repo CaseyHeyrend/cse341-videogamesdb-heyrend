@@ -20,6 +20,6 @@ gamesInfoSchema.pre("save", function (next) {
     next();
 });
 
-var Schema = new Schema({ __v: { type: Number, select: false}});
+
 const GamesInfo = mongoose.model("gamesInfo", gamesInfoSchema);
 module.exports = GamesInfo;
