@@ -123,5 +123,126 @@
         "console": "Switch 2",
         "company": "Nintendo",
         "intro": "06/05/2025"
+      },
+      {
+        "console": "DS Lite",
+        "company": "Nintendo",
+        "intro": "06/11/2006"
+      },
+      {
+        "console": "DS",
+        "company": "Nintendo",
+        "intro": "11/21/2004"
+      },
+      {
+        "console": "3DS LX",
+        "company": "Nintendo",
+        "intro": "02/26/2011" 
+      },
+      {
+        "console": "3DS",
+        "company": "Nintendo",
+        "intro": "02/26/2011"
+      },
+      {
+        "console": "PSP",
+        "company": "Sony",
+        "intro": "12/12/2004"
+      },
+      {
+        "console": "PS Vita",
+        "company": "Sony",
+        "intro": "12/17/2011"
+      },
+      {
+        "console": "Gameboy Advance",
+        "company": "Nintendo",
+        "intro": "03/21/2001"
+      },
+      {
+        "console": "Gameboy Color",
+        "company": "Nintendo",
+        "intro": "10/21/1998"
+      },
+      {
+        "console": "Gameboy",
+        "company": "Nintendo",
+        "intro": "04/21/1989"
+      },
+      {
+        "console": "Gameboy Advance SP",
+        "company": "Nintendo",
+        "intro": "02/14/2003"
+
+      },
+      {
+        "console": "Nintendo DSi",
+        "company": "Nintendo",
+        "intro": "11/01/2008"
+      },
+      {
+        "console": "Nintendo DSi XL",
+        "company": "Nintendo",
+        "intro": "11/21/2009"
+      },
+      {
+        "console": "Neo Geo Pocket Color",
+        "company": "SNK",
+        "intro": "03/16/1999"
+      },
+      {
+        "console": "Neo Geo Pocket",
+        "company": "SNK",
+        "intro": "10/28/1998"
+      },
+      {
+        "console": "Atari Lynx",
+        "company": "Atari",
+        "intro": "09/06/1989"
+      },
+      {
+        "console": "TurboExpress",
+        "company": "NEC",
+        "intro": "12/01/1990"
+      },
+      {
+        "console": "Neo Geo",
+        "company": "SNK",
+        "intro": "07/15/1990"
+      },
+      {
+        "console": "Atari Jaguar",
+        "company": "Atari",
+        "intro": "11/23/1993"
+      },
+      {
+        "console": "Atari 7800",
+        "company": "Atari",
+        "intro": "06/01/1986"
+      },
+      {
+        "console": "Atari 5200",
+        "company": "Atari",
+        "intro": "11/22/1982"
+      },
+      {
+        "console": "ColecoVision",
+        "company": "Coleco",
+        "intro": "08/01/1982"
+      },
+      {
+        "console": "Intellivision",
+        "company": "Mattel",
+        "intro": "11/25/1979"
+      },
+      {
+        "console": "Magnavox Odyssey",
+        "company": "Magnavox",
+        "intro": "04/01/1972"
+      },
+      {
+        "console": "Atari 2600",
+        "company": "Atari",
+        "intro": "09/11/1977"
       }
 ]

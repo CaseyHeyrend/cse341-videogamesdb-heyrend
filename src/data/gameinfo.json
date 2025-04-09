@@ -116,7 +116,7 @@
     "recommended": "yes"
   },
   {
-    "gameTitle": "Star Dew Valley",
+    "gameTitle": "StarDew Valley",
     "consoles": ["Switch", "Steam", "Xbox Series X/S", "Playstation 5", "Playstation 4"],
     "developer": "ConcernedApe",
     "publisher": "ConcernedApe",
@@ -125,5 +125,238 @@
     "rating": "4.8 Stars",
     "releaseDate": "02/26/2016",
     "recommended": "yes"
+  },
+  {
+    "gameTitle": "The Sims 4",
+    "consoles": ["Steam", "Xbox Series X/S", "Playstation 5", "Playstation 4"],
+    "developer": "Maxis",
+    "publisher": "Electronic Arts",
+    "genre": ["Action", "Adventure", "Casual", "Indie", "RPG", "Simulation"],
+    "shortSummary": "Create your own world and design your own characters in The Sims 4. Build the home of your dreams, create unique Sims, and explore vibrant worlds.",
+    "rating": "4.0 Stars",
+    "releaseDate": "09/02/2014",
+    "recommended": "yes"
+  },
+  {
+    "gameTitle": "Animal Crossing: New Horizons",
+    "consoles": ["Switch"],
+    "developer": "Nintendo",
+    "publisher": "Nintendo",
+    "genre": ["Action", "Adventure", "Casual", "Indie", "RPG", "Simulation"],
+    "shortSummary": "Escape to a deserted island paradise and create your own island life. Build, craft, and customize your island home in this charming life simulation game.",
+    "rating": "4.7 Stars",
+    "releaseDate": "03/20/2020",
+    "recommended": "yes"
+  },
+  {
+    "gameTitle": "R.E.P.O",
+    "consoles": ["Steam"],
+    "developer": "semiwork",
+    "publisher": "semiwork",
+    "genre": ["Action", "Early Access", "Indie"],
+    "shortSummary": "An online co-op horror game with up to 6 players. Locate valuable, fully physics-based objects and handle them with care as you retrieve and extract to satisfy your creator's desires.",
+    "rating": "4.0 Stars",
+    "releaseDate": "02/26/2025",
+    "recommended": "yes"
+  },
+  {
+    "gameTitle": "Flotsam",
+    "consoles": ["Steam"],
+    "developer": "Pajama Llama Games",
+    "publisher": "Stray Fawn Publishing",
+    "genre": ["Indie", "Simulation", "Strategy", "Early Access"],
+    "shortSummary": "Flotsam is a game about collecting junk and building a floating town in a flooded world. Gather resources, build your town, and keep your inhabitants happy.",
+    "rating": "4.0 Stars",
+    "releaseDate": "09/26/2019",
+    "recommended": "yes"
+  },
+  {
+    "gameTitle": "Slime Rancher 2",
+    "consoles": ["Steam"],
+    "developer": "Monomi Park",
+    "publisher": "Monomi Park",
+    "genre": ["Action", "Adventure", "Casual", "Indie", "Simulation"],
+    "shortSummary": "Slime Rancher 2 is a sequel to the popular farming simulation game where you collect and raise adorable slimes. Explore a new world, gather resources, and build your ranch.",
+    "rating": "4.5 Stars",
+    "releaseDate": "09/22/2022",
+    "recommended": "yes"
+  },
+  {
+    "gameTitle": "Hogwarts Legacy",
+    "consoles": ["Steam", "Xbox Series X/S", "Playstation 5", "Playstation 4"],
+    "developer": "Portkey Games",
+    "publisher": "Warner Bros. Interactive Entertainment",
+    "genre": ["Action", "Adventure", "RPG"],
+    "shortSummary": "Experience the magic of Hogwarts in this open-world action RPG set in the Wizarding World. Create your own character, attend classes, and explore the iconic castle and surrounding areas.",
+    "rating": "4.2 Stars",
+    "releaseDate": "02/10/2023",
+    "recommended": "no"
+  },
+  {
+    "gameTitle": "Kirby Air Ride",
+    "consoles": ["GameCube"],
+    "developer": "HAL_Laboratory",
+    "publisher": "Nintendo",
+    "genre": ["Racing"],
+    "shortSummary": "Kirby Air Ride is played primarily through use of a vehicle, many of which are taken from the previous Kirby games, such as the Warpstar.",
+    "rating": "4.5 Stars",
+    "releaseDate": "10/14/2003",
+    "recommended": "yes"
+  },
+  {
+    "gameTitle": "Kirby & the Amazing Mirror",
+    "consoles": ["GameBoy Advance", "Gameboy Advance SP"],
+    "developer": "HAL_Laboratory",
+    "publisher": "Nintendo",
+    "genre": ["Action", "Platformer","Metroidvania"],
+    "shortSummary": "Kirby & the Amazing Mirror is a platform game in which players control Kirby as he explores a large, interconnected world. The game features a cooperative multiplayer mode, allowing up to four players to play together.",
+    "rating": "4.5 Stars",
+    "releaseDate": "10/24/2004",
+    "recommended": "yes"
+  },
+  {
+    "gameTitle": "Kirby & the Forgotten Land",
+    "consoles": ["Switch"],
+    "developer": "HAL_Laboratory",
+    "publisher": "Nintendo",
+    "genre": ["Action", "Adventure", "Platformer"],
+    "shortSummary": "Kirby & the Forgotten Land is a 3D platform game in which players control Kirby as he explores a mysterious world filled with abandoned structures and creatures. The game features cooperative multiplayer gameplay, allowing a second player to control Bandana Waddle Dee.",
+    "rating": "4.5 Stars",
+    "releaseDate": "03/25/2022",
+    "recommended": "yes"
+  },
+  {
+    "gameTitle": "The Legend of Zelda: Four Swords Adventures",
+    "consoles": ["GameCube"],
+    "developer": "Nintendo",
+    "publisher": "Nintendo",
+    "genre": ["Action", "Adventure"],
+    "shortSummary": "The Legend of Zelda: Four Swords Adventures is an action-adventure game in which players control Link as he battles enemies and solves puzzles in a top-down perspective. The game features cooperative multiplayer gameplay, allowing up to four players to play together.",
+    "rating": "4.5 Stars",
+    "releaseDate": "05/18/2004",
+    "recommended": "yes"
+  },
+  {
+    "gameTitle": "The Legend of Zelda: The Wind Waker",
+    "consoles": ["GameCube"],
+    "developer": "Nintendo",
+    "publisher": "Nintendo",
+    "genre": ["Action", "Adventure"],
+    "shortSummary": "The Legend of Zelda: The Wind Waker is an action-adventure game in which players control Link as he explores a vast ocean and battles enemies. The game features a cel-shaded art style and a unique sailing mechanic.",
+    "rating": "4.5 Stars",
+    "releaseDate": "03/24/2003",
+    "recommended": "yes"
+  },
+  {
+    "gameTitle": "The Legend of Zelda: Twilight Princess",
+    "consoles": ["GameCube"],
+    "developer": "Nintendo",
+    "publisher": "Nintendo",
+    "genre": ["Action", "Adventure"],
+    "shortSummary": "The Legend of Zelda: Twilight Princess is an action-adventure game in which players control Link as he battles enemies and solves puzzles in a dark fantasy world. The game features a unique wolf transformation mechanic.",
+    "rating": "4.5 Stars",
+    "releaseDate": "12/11/2006",
+    "recommended": "yes"
+  },
+  {
+    "gameTitle": "The Legend of Zelda: Ocarina of Time",
+    "consoles": ["Nintendo 64"],
+    "developer": "Nintendo",
+    "publisher": "Nintendo",
+    "genre": ["Action", "Adventure"],
+    "shortSummary": "The Legend of Zelda: Ocarina of Time is an action-adventure game in which players control Link as he battles enemies and solves puzzles in a 3D world. The game features a unique time travel mechanic and is widely regarded as one of the greatest video games of all time.",
+    "rating": "4.5 Stars",
+    "releaseDate": "11/23/1998",
+    "recommended": "yes"
+  },
+  {
+    "gameTitle": "The Legend of Zelda: Majora's Mask",
+    "consoles": ["Nintendo 64"],
+    "developer": "Nintendo",
+    "publisher": "Nintendo",
+    "genre": ["Action", "Adventure"],
+    "shortSummary": "The Legend of Zelda: Majora's Mask is an action-adventure game in which players control Link as he battles enemies and solves puzzles in a dark fantasy world. The game features a unique time-based mechanic and is known for its darker tone.",
+    "rating": "4.5 Stars",
+    "releaseDate": "10/26/2000",
+    "recommended": "yes"
+  },
+  {
+    "gameTitle": "Naruto: Clash of Ninja",
+    "consoles": ["GameCube"],
+    "developer": "Eighting",
+    "publisher": "Tomy",
+    "genre": ["Action", "Fighting"],
+    "shortSummary": "Naruto: Clash of Ninja is a fighting game based on the popular anime and manga series Naruto. Players can choose from a variety of characters and battle against each other in 3D arenas.",
+    "rating": "4.5 Stars",
+    "releaseDate": "10/07/2002",
+    "recommended": "yes"  
+  },
+  {
+    "gameTitle": "Pikmin",
+    "consoles": ["GameCube", "Wii", "Switch"],
+    "developer": "Nintendo",
+    "publisher": "Nintendo",
+    "genre": ["Action", "Adventure", "Strategy"],
+    "shortSummary": "Pikmin is a real-time strategy game in which players control Captain Olimar as he commands a group of plant-like creatures called Pikmin to solve puzzles and defeat enemies. The game features a unique time-based mechanic and is known for its charming art style.",
+    "rating": "4.5 Stars",
+    "releaseDate": "10/26/2001",
+    "recommended": "yes"
+  },
+  {
+    "gameTitle": "Pikmin 2",
+    "consoles": ["GameCube", "Wii", "Switch"],
+    "developer": "Nintendo",
+    "publisher": "Nintendo",
+    "genre": ["Action", "Adventure", "Strategy"], 
+    "shortSummary": "Pikmin 2 is a real-time strategy game in which players control Captain Olimar and his partner Louie as they command a group of Pikmin to solve puzzles and defeat enemies. The game features new types of Pikmin and a cooperative multiplayer mode.",
+    "rating": "4.5 Stars",
+    "releaseDate": "08/30/2004",
+    "recommended": "yes" 
+  },
+  {
+    "gameTitle": "Pikmin 3",
+    "consoles": ["Wii U", "Switch"],
+    "developer": "Nintendo",
+    "publisher": "Nintendo",
+    "genre": ["Action", "Adventure", "Strategy"],
+    "shortSummary": "Pikmin 3 is a real-time strategy game in which players control three new characters as they command a group of Pikmin to solve puzzles and defeat enemies. The game features new types of Pikmin and a cooperative multiplayer mode.",
+    "rating": "4.5 Stars",
+    "releaseDate": "07/26/2013",
+    "recommended": "yes"
+  },
+  {
+    "gameTitle": "Pokémon Colosseum",
+    "consoles": ["GameCube"],
+    "developer": "Genius Sonority",
+    "publisher": "Nintendo",
+    "genre": ["Action", "Adventure", "RPG"],
+    "shortSummary": "Pokémon Colosseum is a role-playing game in which players control a character named Wes as he battles other trainers and captures Shadow Pokémon. The game features a unique battle system and is set in a 3D world.",
+    "rating": "4.5 Stars",
+    "releaseDate": "03/14/2004",
+    "recommended": "yes"
+  },
+  {
+    "gameTitle": "Pokémon Dash",
+    "consoles": ["Nintendo DS", "Nintendo DS Lite", "Nintendo DSi", "Nintendo DSi XL", "Nintendo 3DS", "Nintendo 3DS XL"],
+    "developer": "Ambrella",
+    "publisher": "Nintendo",
+    "genre": ["Action", "Racing"],
+    "shortSummary": "Dash is a top-down perspective racing video game in which the player uses a stylus to control a Pikachu and race through checkpoints.",
+    "rating": "4.5 Stars",
+    "releaseDate": "03/14/2004",
+    "recommended": "yes"
+  },
+  {
+    "gameTitle": "Pokémon Snap",
+    "consoles": ["Nintendo 64", "Wii", "Wii U", "Switch"],
+    "developer": "HAL_Laboratory",
+    "publisher": "Nintendo",
+    "genre": ["Action", "Adventure", "Simulation"],
+    "shortSummary": "Pokémon Snap is a rail shooter game in which players control a character named Todd Snap as he takes photographs of Pokémon in their natural habitats. The game features a unique photo rating system and is known for its charming art style.",
+    "rating": "4.5 Stars",
+    "releaseDate": "07/14/1999",
+    "recommended": "yes"
   }
+
+
 ]
